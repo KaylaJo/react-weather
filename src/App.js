@@ -1,9 +1,16 @@
+import Weather from "./Weather";
+import Search from "./Search";
+import Footer from "./Footer";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>hello</h1>
+      <div className="Container">
+        <Search />
+        <Weather />
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,45 @@
+.searchBar {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.Form {
+  border-radius: 15px;
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  backdrop-filter: blur(10px);
+  background-color: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.1)
+  );
+  padding: 10px;
+  border: none;
+  margin: 5px;
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+  color: #838ee8;
+}
+
+.Button {
+  border-radius: 15px;
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  backdrop-filter: blur(10px);
+  background-color: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.1)
+  );
+  padding: 10px 15px;
+  border: none;
+  margin: 5px;
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+}
+
+img {
+  height: 25px;
+  filter: invert(61%) sepia(26%) saturate(1257%) hue-rotate(198deg)
+    brightness(92%) contrast(97%);
+}
