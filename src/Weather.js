@@ -1,5 +1,4 @@
 import React from "react";
-import axios from "axios";
 import Forecast from "./Forecast";
 import "./Weather.css";
 
@@ -9,11 +8,11 @@ export default function Weather() {
       <h1 className="cityName">Chicago</h1>
       <span className="time">Sun, Dec 5, 19:32</span>
       <div className="row temperatureContainer">
-        <div className="col-md-6 Temperature">
+        <div className="col Temperature">
           <h2 className="todayTemp">80°</h2>
           <span className="degreeUnits">F</span>
         </div>
-        <div className=" col-md-6 infoContainer">
+        <div className=" col infoContainer">
           <h3 className="weatherType">Sunny</h3>
           <span className="mainIcon">
             <img

@@ -61,13 +61,16 @@ span.time {
   padding: 30px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 730px) {
   .Temperature {
     padding: 0;
   }
   .weatherContainer {
     padding: 15px;
     margin: 0;
+  }
+  .Container {
+    max-width: 100%;
   }
   h2,
   .windSpeed,
