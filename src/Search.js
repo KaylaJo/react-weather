@@ -8,7 +8,7 @@ export default function Search() {
         <input
           type="search"
           className="Form col-12"
-          value="Search by city..."
+          placeholder="Search by city..."
         />
         <button className="Button col">
           <img

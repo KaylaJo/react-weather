@@ -1,6 +1,6 @@
 .weatherContainer {
-  padding: 25px;
-  margin: 20px;
+  padding: 20px;
+  margin: 15px;
   text-align: center;
   backdrop-filter: blur(10px);
   background-color: white;

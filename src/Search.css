@@ -1,7 +1,7 @@
 .searchBar {
-  margin: 30px;
+  margin: 10px;
   text-align: center;
-  padding: 10px;
+  padding: 10px 15px;
 }
 
 .Form {
@@ -16,7 +16,7 @@
   );
   padding: 10px;
   border: none;
-  margin: 5px;
+
   box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
   color: #838ee8;
 }
