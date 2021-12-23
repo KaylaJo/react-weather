@@ -20,8 +20,9 @@
   color: #838ee8;
 }
 
-@media (max-width 450px) {
+@media (max-width: 450px) {
   .Container {
     margin: 0 auto;
+    padding: 0;
   }
 }

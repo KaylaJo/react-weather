@@ -1,7 +1,7 @@
 .searchBar {
-  margin: 10px;
   text-align: center;
-  padding: 10px 15px;
+  padding: 0px 15px;
+  margin: 20px;
 }
 
 .Form {
@@ -14,9 +14,9 @@
     rgba(255, 255, 255, 0.5),
     rgba(255, 255, 255, 0.1)
   );
-  padding: 10px;
+  padding: 7px;
+  margin: 0px 0px 5px 0px;
   border: none;
-
   box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
   color: #838ee8;
 }
@@ -31,9 +31,9 @@
     rgba(255, 255, 255, 0.5),
     rgba(255, 255, 255, 0.1)
   );
-  padding: 10px 15px;
+  padding: 7px;
+  margin: 5px 0px 0px 5px;
   border: none;
-  margin: 5px;
   box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
 }
 
