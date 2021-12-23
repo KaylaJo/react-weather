@@ -7,7 +7,7 @@ export default function Footer() {
       <footer className="sourceLine">
         Open-source code on{" "}
         <a
-          href="https://github.com/KaylaJo/weather-react"
+          href="https://github.com/KaylaJo/react-weather"
           class="sourceCodeLink"
           target="_blank"
           rel="noreferrer"
@@ -16,7 +16,7 @@ export default function Footer() {
         </a>
         . Coded by Kayla J. Cupp. Hosted on{" "}
         <a
-          href="https://elated-allen-6b2700.netlify.app/"
+          href="https://priceless-poitras-bbc49f.netlify.app"
           class="netlifyLink"
           target="_blank"
           rel="noreferrer"
