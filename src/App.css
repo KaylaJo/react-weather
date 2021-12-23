@@ -19,10 +19,3 @@
   box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
   color: #838ee8;
 }
-
-@media (max-width: 450px) {
-  .Container {
-    margin: 0 auto;
-    padding: 0;
-  }
-}
