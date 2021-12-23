@@ -2,17 +2,17 @@
   font-size: 12px;
   text-align: center;
   display: block;
-  color: #838ee8;
+  color: #525794;
 }
 
 .sourceCodeLink,
 .netlifyLink,
 .iconReferenceLink {
-  color: #838ee8;
+  color: #525794;
 }
 
 .sourceCodeLink:hover,
 .netlifyLink:hover,
 .iconReferenceLink:hover {
-  color: #838ee8;
+  color: white;
 }

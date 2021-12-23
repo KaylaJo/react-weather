@@ -39,6 +39,6 @@
 
 img {
   height: 25px;
-  filter: invert(61%) sepia(26%) saturate(1257%) hue-rotate(198deg)
-    brightness(92%) contrast(97%);
+  filter: invert(33%) sepia(71%) saturate(354%) hue-rotate(196deg)
+    brightness(92%) contrast(93%);
 }
