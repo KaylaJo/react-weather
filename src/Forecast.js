@@ -6,7 +6,7 @@ export default function Forecast() {
     <div id="weekAhead-Forecast" className="container">
       <div className="row weekAhead">
         <div className="col-4 weekForecast">
-          Monday
+          Mon
           <br />
           <span className="weekHigh">75°</span>
           <span className="weekLow">40°</span>
@@ -16,7 +16,7 @@ export default function Forecast() {
           </div>
         </div>
         <div className="col-4 weekForecast">
-          Tuesday
+          Tue
           <br />
           <span className="weekHigh">75°</span>
           <span className="weekLow">40°</span>
@@ -26,7 +26,7 @@ export default function Forecast() {
           </div>
         </div>
         <div className="col-4 weekForecast">
-          Wednesday
+          Wed
           <br />
           <span className="weekHigh">75°</span>
           <span className="weekLow">40°</span>
@@ -36,7 +36,7 @@ export default function Forecast() {
           </div>
         </div>
         <div className="col-4 weekForecast">
-          Thursday
+          Thu
           <br />
           <span className="weekHigh">75°</span>
           <span className="weekLow">40°</span>
@@ -46,7 +46,7 @@ export default function Forecast() {
           </div>
         </div>
         <div className="col-4 weekForecast">
-          Friday
+          Fri
           <br />
           <span className="weekHigh">75°</span>
           <span className="weekLow">40°</span>
@@ -56,7 +56,7 @@ export default function Forecast() {
           </div>
         </div>
         <div className="col-4 weekForecast">
-          Sunny
+          Sat
           <br />
           <span className="weekHigh">75°</span>
           <span className="weekLow">40°</span>

@@ -8,11 +8,11 @@ export default function Weather() {
       <h1 className="cityName">Chicago</h1>
       <span className="time">Sun, Dec 5, 19:32</span>
       <div className="row temperatureContainer">
-        <div className="col Temperature">
+        <div className="col-md-6 Temperature">
           <h2 className="todayTemp">80°</h2>
           <span className="degreeUnits">F</span>
         </div>
-        <div className=" col infoContainer">
+        <div className=" col-md-6 infoContainer">
           <h3 className="weatherType">Sunny</h3>
           <span className="mainIcon">
             <img
