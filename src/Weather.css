@@ -51,10 +51,10 @@ span.time {
   font-size: 50px;
 }
 
-.degreeUnits {
+.unit {
   position: relative;
-  top: -18px;
-  font-size: 22px;
+  top: -20px;
+  font-size: 18px;
 }
 
 .Temperature {
