@@ -1,6 +1,6 @@
 .weatherContainer {
   padding: 20px;
-  margin: 15px;
+  margin: 10px;
   text-align: center;
   backdrop-filter: blur(10px);
   background-color: white;
@@ -28,7 +28,7 @@
 }
 
 span.time {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .weatherType {
@@ -78,9 +78,7 @@ a:hover {
     padding: 10px;
     margin: 0px;
   }
-  .appContainer {
-    max-width: 100%;
-  }
+
   h2,
   .windSpeed,
   .humidity {
