@@ -22,14 +22,14 @@ export default function Search(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    search();
+    searchForm();
   }
 
   function handleCityChange(event) {
     setCity(event.target.value);
   }
 
-  function search() {
+  function searchForm() {
     const apiKey = "58a6775f97527351bf6c6966e209be39";
     let apiUrl = `https:///api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
@@ -69,7 +69,7 @@ export default function Search(props) {
       </div>
     );
   } else {
-    search();
+    searchForm();
     return "Loading...";
   }
 }
