@@ -8,12 +8,17 @@ export default function Search(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
+    let now = new Date();
+    let localTime = now.getTime();
+    let localOffset = now.getTimezoneOffset() * 60000;
+    let utc = localTime + localOffset;
+    let local = utc + 1000 * response.data.timezone;
     setWeatherData({
       ready: true,
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       city: response.data.name,
-      time: new Date(response.data.dt * 1000),
+      time: new Date(local),
       humidity: response.data.main.humidity,
       icon: `./icons/${response.data.weather[0].icon}.png`,
       description: response.data.weather[0].description,
