@@ -3,36 +3,45 @@ import axios from "axios";
 import Forecast from "./Forecast";
 import "./Weather.css";
 
-export default function Weather() {
-  const [ready, setReady] = useState(false);
-  const [temperature, setTemperature] = useState(null);
+export default function Weather(props) {
+  const [weatherData, setweatherData] = useState({ ready: false });
   function handleResponse(response) {
     console.log(response.data);
-    setTemperature(Math.round(response.data.main.temp));
-    setReady(true);
+    setweatherData({
+      ready: true,
+      temperature: response.data.main.temp,
+      wind: response.data.wind.speed,
+      city: response.data.name,
+      date: "Sun, Dec 5, 19:32",
+      humidity: response.data.main.humidity,
+      icon: "./icons/01d.png",
+      description: response.data.weather[0].description,
+    });
   }
 
-  if (ready) {
+  if (weatherData.ready) {
     return (
       <div className="weatherContainer">
-        <h1 className="cityName">Chicago</h1>
-        <span className="time">Sun, Dec 5, 19:32</span>
+        <h1 className="cityName">{weatherData.city}</h1>
+        <span className="time">{weatherData.date}</span>
         <div className="row temperatureContainer">
           <div className="col-md-6 Temperature">
-            <h2 className="todayTemp">{temperature}</h2>
+            <h2 className="todayTemp">{Math.round(weatherData.temperature)}</h2>
             <span className="degreeUnits">°C</span>
           </div>
           <div className=" col-md-6 infoContainer">
-            <h3 className="weatherType">Sunny</h3>
+            <h3 className="weatherType text-capitalize">
+              {weatherData.description}
+            </h3>
             <span className="mainIcon">
               <img
-                src="./icons/01d.png"
+                src={weatherData.icon}
                 className="searchIcons"
-                alt="search icon"
+                alt={weatherData.description}
               />
             </span>
-            <h4 className="humidity">Humidity: 10%</h4>
-            <p className="windSpeed">WindSpeed: 5mph</p>
+            <h4 className="humidity">Humidity:{weatherData.humidity}%</h4>
+            <p className="windSpeed">WindSpeed: {weatherData.wind}km/h</p>
           </div>
         </div>
         <Forecast />
@@ -40,8 +49,7 @@ export default function Weather() {
     );
   } else {
     let apiKey = "58a6775f97527351bf6c6966e209be39";
-    let city = "London";
-    let apiUrl = `https:///api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    let apiUrl = `https:///api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
 
     return "loading..";
