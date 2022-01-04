@@ -15,7 +15,7 @@ export default function Search(props) {
       city: response.data.name,
       time: new Date(response.data.dt * 1000),
       humidity: response.data.main.humidity,
-      icon: "./icons/01d.png",
+      icon: `./icons/${response.data.weather[0].icon}.png`,
       description: response.data.weather[0].description,
     });
   }
