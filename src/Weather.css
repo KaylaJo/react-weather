@@ -1,4 +1,4 @@
-.weatherContainer {
+.allWeather {
   padding: 20px;
   margin: 10px;
   text-align: center;
@@ -14,7 +14,7 @@
 }
 
 .temperatureContainer {
-  padding: 20px 135px;
+  padding: 15px 133px;
   text-align: center;
 }
 

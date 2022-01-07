@@ -8,7 +8,7 @@ export default function Footer() {
         Open-source code on{" "}
         <a
           href="https://github.com/KaylaJo/react-weather"
-          class="sourceCodeLink"
+          className="sourceCodeLink"
           target="_blank"
           rel="noreferrer"
         >
@@ -17,7 +17,7 @@ export default function Footer() {
         . Coded by Kayla J. Cupp. Hosted on{" "}
         <a
           href="https://priceless-poitras-bbc49f.netlify.app"
-          class="netlifyLink"
+          className="netlifyLink"
           target="_blank"
           rel="noreferrer"
         >
@@ -26,7 +26,7 @@ export default function Footer() {
         . Icons by{" "}
         <a
           href="https://icons8.com/icon/set/weather/ios"
-          class="iconReferenceLink"
+          className="iconReferenceLink"
           target="_blank"
           rel="noreferrer"
         >

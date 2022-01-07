@@ -30,7 +30,6 @@ export default function Weather(props) {
           <p className="windSpeed">WindSpeed: {props.data.wind} km/h</p>
         </div>
       </div>
-      <Forecast />
     </div>
   );
 }

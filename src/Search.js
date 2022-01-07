@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Weather from "./Weather.js";
+import Forecast from "./Forecast.js";
 import axios from "axios";
 import "./Search.css";
 
@@ -13,8 +14,10 @@ export default function Search(props) {
     let localOffset = now.getTimezoneOffset() * 60000;
     let utc = localTime + localOffset;
     let local = utc + 1000 * response.data.timezone;
+
     setWeatherData({
       ready: true,
+      coord: response.data.coord,
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       city: response.data.name,
@@ -70,7 +73,10 @@ export default function Search(props) {
             </div>
           </form>
         </div>
-        <Weather data={weatherData} />
+        <div className="allWeather">
+          <Weather data={weatherData} />
+          <Forecast coord={weatherData.coord} />
+        </div>
       </div>
     );
   } else {
