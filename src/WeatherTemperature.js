@@ -20,6 +20,7 @@ export default function WeatherTemperature(props) {
         <h2 className="todayTemp">{Math.round(fahrenheit)}</h2>
         <span className="unit">
           <a href="/" onClick={convertToCelsius}>
+            {" "}
             °C{" "}
           </a>
           | °F
