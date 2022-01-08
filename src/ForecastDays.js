@@ -23,7 +23,7 @@ export default function ForecastDay(props) {
     //let utc = localTime + localOffset;
     //let local = utc + 1000 * props.timezone;
     //let newTime = new Date(local);
-    // let day = newTime.getDay();
+    let day = date.getDay();
 
     let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
