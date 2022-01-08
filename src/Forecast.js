@@ -18,6 +18,15 @@ export default function Forecast(props) {
     setLoaded(true);
   }
 
+  function load() {
+    const apiKey = "58a6775f97527351bf6c6966e209be39";
+    let lat = props.coord.lat;
+    let lon = props.coord.lon;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
+
+    axios.get(apiUrl).then(handleResponse);
+  }
+
   if (loaded) {
     return (
       <div id="weekAhead-Forecast" className="container">
@@ -32,12 +41,7 @@ export default function Forecast(props) {
       </div>
     );
   } else {
-    const apiKey = "58a6775f97527351bf6c6966e209be39";
-    let lat = props.coord.lat;
-    let lon = props.coord.lon;
-    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
-
-    axios.get(apiUrl).then(handleResponse);
+    load();
 
     return "loading...";
   }

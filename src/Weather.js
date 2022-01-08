@@ -12,7 +12,7 @@ export default function Weather(props) {
       </span>
       <div className="row temperatureContainer">
         <div className="col-md-6 Temperature">
-          <WeatherTemperature celsius={props.data.temperature} />
+          <WeatherTemperature fahrenheit={props.data.temperature} />
         </div>
         <div className=" col-md-6 infoContainer">
           <h3 className="weatherType text-capitalize">
@@ -26,7 +26,7 @@ export default function Weather(props) {
             />
           </span>
           <h4 className="humidity">Humidity:{props.data.humidity} %</h4>
-          <p className="windSpeed">WindSpeed: {props.data.wind} km/h</p>
+          <p className="windSpeed">WindSpeed: {props.data.wind} mph</p>
         </div>
       </div>
     </div>

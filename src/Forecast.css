@@ -6,17 +6,17 @@
   padding: 10px 5px;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
-  color: #525794;
+  color: #44448d;
 }
 
 .weekHigh {
   padding: 5px;
-  color: #525794;
+  color: #44448d;
 }
 
 .weekLow {
   padding: 5px;
-  color: #525794;
+  color: #44448d;
 }
 
 .weekAhead {

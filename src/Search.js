@@ -39,7 +39,7 @@ export default function Search(props) {
 
   function searchForm() {
     const apiKey = "58a6775f97527351bf6c6966e209be39";
-    let apiUrl = `https:///api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    let apiUrl = `https:///api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(handleResponse);
   }
 
@@ -48,26 +48,19 @@ export default function Search(props) {
       <div>
         <div className="searchBar">
           <form onSubmit={handleSubmit}>
-            <div className="row">
+            <div className="row justify-content-center">
               <input
                 type="search"
-                className="Form col-12"
+                className="Form col-9"
                 placeholder="Search by city..."
                 autoFocus="on"
                 onChange={handleCityChange}
               />
-              <button type="submit" className="Button col">
+              <button type="submit" className="Button col-2">
                 <img
                   src="./icons/search.png"
                   className="searchIcons"
                   alt="search icon"
-                />
-              </button>
-              <button type="submit" className="Button col">
-                <img
-                  src="./icons/location.png"
-                  alt="location icon"
-                  className="searchIcons"
                 />
               </button>
             </div>
