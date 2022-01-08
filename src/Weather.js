@@ -25,7 +25,7 @@ export default function Weather(props) {
               alt={props.data.description}
             />
           </span>
-          <h4 className="humidity">Humidity:{props.data.humidity} %</h4>
+          <h4 className="humidity">Humidity: {props.data.humidity} %</h4>
           <p className="windSpeed">WindSpeed: {props.data.wind} mph</p>
         </div>
       </div>

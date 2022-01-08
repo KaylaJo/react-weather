@@ -19,7 +19,7 @@ export default function Search(props) {
       ready: true,
       coord: response.data.coord,
       temperature: response.data.main.temp,
-      wind: response.data.wind.speed,
+      wind: Math.round(response.data.wind.speed),
       city: response.data.name,
       time: new Date(local),
       humidity: response.data.main.humidity,
