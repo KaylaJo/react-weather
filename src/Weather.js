@@ -1,6 +1,5 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
-import Forecast from "./Forecast";
 import WeatherTemperature from "./WeatherTemperature";
 import "./Weather.css";
 
