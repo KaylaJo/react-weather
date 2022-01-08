@@ -6,7 +6,7 @@ import "./Forecast.css";
 export default function Forecast(props) {
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
-  //let [timezone, setTimezone] = useState(null);
+  let [timezone, setTimezone] = useState(null);
 
   useEffect(() => {
     setLoaded(false);
@@ -14,7 +14,7 @@ export default function Forecast(props) {
 
   function handleResponse(response) {
     setForecast(response.data.daily);
-    //setTimezone(response.data.timezone_offset);
+    setTimezone(response.data.timezone_offset);
     setLoaded(true);
   }
 
@@ -22,12 +22,12 @@ export default function Forecast(props) {
     return (
       <div id="weekAhead-Forecast" className="container">
         <div className="row weekAhead">
-          <ForecastDays data={forecast[1]} />
-          <ForecastDays data={forecast[2]} />
-          <ForecastDays data={forecast[3]} />
-          <ForecastDays data={forecast[4]} />
-          <ForecastDays data={forecast[5]} />
-          <ForecastDays data={forecast[6]} />
+          <ForecastDays data={forecast[1]} newtimezone={timezone} />
+          <ForecastDays data={forecast[2]} newtimezone={timezone} />
+          <ForecastDays data={forecast[3]} newtimezone={timezone} />
+          <ForecastDays data={forecast[4]} newtimezone={timezone} />
+          <ForecastDays data={forecast[5]} newtimezone={timezone} />
+          <ForecastDays data={forecast[6]} newtimezone={timezone} />
         </div>
       </div>
     );
